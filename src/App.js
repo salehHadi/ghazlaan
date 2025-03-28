@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { lazy, Suspense } from "react";
+import Locading from "./components/Locading.js";
+import { Route, Routes } from "react-router-dom";
+import { Container, ThemeProvider } from "@mui/material";
+import theme from "./styles/theme/index.js";
+
+const HomePage = lazy(() => import("./pages/HomePage.js"));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <ThemeProvider theme={theme}>
+        <Suspense fallback={<Locading />}>
+          <Routes>
+            <Route path="*" element={<HomePage />} />
+          </Routes>
+        </Suspense>
+      </ThemeProvider>
+    </Container>
   );
 }
 
