@@ -8,7 +8,7 @@ export default function Index() {
 
   const matches = useMediaQuery(theme.breakpoints.down("md"));
   return (
-    <div style={{ width: "100%", paddingBottom: "80px" }}>
+    <div id="contact-us" style={{ width: "100%", paddingBottom: "80px" }}>
       {matches ? "hj" : <ContactDesktop />}
     </div>
   );

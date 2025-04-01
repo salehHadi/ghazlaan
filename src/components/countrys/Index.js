@@ -8,6 +8,8 @@ export default function Index() {
 
   const matches = useMediaQuery(theme.breakpoints.down("md"));
   return (
-    <div style={{ width: "100%" }}>{matches ? "hj" : <CountryDesktop />}</div>
+    <div id="countrys" style={{ width: "100%" }}>
+      {matches ? "hj" : <CountryDesktop />}
+    </div>
   );
 }

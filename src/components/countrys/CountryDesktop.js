@@ -17,9 +17,8 @@ const CountryContainer = styled(Box)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   width: "100%",
-
-  gap: "40px",
-  marginBottom: "80px",
+  gap: "24px",
+  marginBottom: "24px",
 }));
 
 const CountryDiv = styled(Box)(({ theme }) => ({
@@ -80,18 +79,11 @@ export default function CountryDesktop() {
     <div>
       <div
         style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          width: "100%",
           marginBottom: "40px",
           padding: "0 24px",
         }}
       >
-        <SectionName>
-          اخـتـر عـمـالـتـك <br />
-          الـمـنـزلـيـة الأن
-        </SectionName>
+        <SectionName>اخـتـر عـمـالـتـك الـمـنـزلـيـة الأن</SectionName>
 
         <p>
           يمكنك مشاهد العمالة المتوفر <br />
@@ -140,7 +132,12 @@ export default function CountryDesktop() {
           <img
             src={start}
             alt="star"
-            style={{ bottom: "-13%", right: "-18%", position: "absolute" }}
+            style={{
+              bottom: "-8%",
+              right: "-15%",
+              position: "absolute",
+              width: "35px",
+            }}
           />
         </CountryDiv>
       </CountryContainer>

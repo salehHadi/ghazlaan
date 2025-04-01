@@ -26,6 +26,7 @@ export default function Header() {
         alignItems: "center",
         width: "100%",
         paddingTop: "16px",
+        paddingBottom: "4px",
       }}
     >
       <Box
@@ -33,23 +34,25 @@ export default function Header() {
           width: "25%",
         }}
       >
-        <button
-          style={{
-            padding: "12px",
-            borderRadius: "32px",
-            backgroundColor: "#13B4E9",
-            width: "fit-content",
-            color: "white",
-            fontWeight: 400,
-            fontSize: "18px",
-            border: "none",
-            borderBottom: "4px solid #005596",
-            borderRight: "3px solid #005596",
-            cursor: "pointer",
-          }}
-        >
-          تواصل معنا
-        </button>
+        <a href="#contact-us">
+          <button
+            style={{
+              padding: "12px",
+              borderRadius: "32px",
+              backgroundColor: "#13B4E9",
+              width: "fit-content",
+              color: "white",
+              fontWeight: 400,
+              fontSize: "18px",
+              border: "none",
+              borderBottom: "4px solid #005596",
+              borderRight: "3px solid #005596",
+              cursor: "pointer",
+            }}
+          >
+            تواصل معنا
+          </button>
+        </a>
       </Box>
 
       <Box
@@ -84,7 +87,7 @@ export default function Header() {
               // onMouseLeave={() => setIsVisibale(false)}
               style={{
                 position: "absolute",
-                bottom: -320,
+                bottom: -313,
                 right: 0,
                 display: "inline-block",
                 zIndex: 1,

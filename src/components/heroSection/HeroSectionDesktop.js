@@ -108,30 +108,34 @@ export default function HeroSection() {
               gap: "20px",
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                gap: "4px",
-              }}
-            >
-              <p>
-                شاهد العاملات <br />
-                المتوفرة فورا
-              </p>
-              <img src={show} alt="show" />
-            </div>
-            <div
-              style={{
-                padding: "16px",
-                borderRadius: "34px",
-                backgroundColor: "black",
-                color: "white",
-              }}
-            >
-              <p>تواصل معنا</p>
-            </div>
+            <a href="#countrys">
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  gap: "4px",
+                }}
+              >
+                <p>
+                  شاهد العاملات <br />
+                  المتوفرة فورا
+                </p>
+                <img src={show} alt="show" />
+              </div>
+            </a>
+            <a href="#contact-us">
+              <div
+                style={{
+                  padding: "16px",
+                  borderRadius: "34px",
+                  backgroundColor: "black",
+                  color: "white",
+                }}
+              >
+                <p>تواصل معنا</p>
+              </div>
+            </a>
           </div>
         </div>
 
