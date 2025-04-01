@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/ghazlaan/static/css/main.d506b4a5.css",
-    "main.js": "/ghazlaan/static/js/main.01fb74c7.js",
+    "main.css": "/ghazlaan/static/css/main.bfb4916f.css",
+    "main.js": "/ghazlaan/static/js/main.ac269fd6.js",
     "static/css/215.128dd2e4.chunk.css": "/ghazlaan/static/css/215.128dd2e4.chunk.css",
-    "static/js/215.6b126d8f.chunk.js": "/ghazlaan/static/js/215.6b126d8f.chunk.js",
+    "static/js/215.3c330441.chunk.js": "/ghazlaan/static/js/215.3c330441.chunk.js",
     "static/js/453.f5977e88.chunk.js": "/ghazlaan/static/js/453.f5977e88.chunk.js",
     "static/js/329.aa7e6251.chunk.js": "/ghazlaan/static/js/329.aa7e6251.chunk.js",
     "static/media/country8.png": "/ghazlaan/static/media/country8.c06abecf5900610ed182.png",
@@ -33,15 +33,15 @@
     "static/media/x-twitter.svg": "/ghazlaan/static/media/x-twitter.02605a63f47ba384d329354ca8c726bb.svg",
     "static/media/arrowDown.svg": "/ghazlaan/static/media/arrowDown.db1c55483e7ce40d2339cd2a90ae8497.svg",
     "static/media/Ellipse1.svg": "/ghazlaan/static/media/Ellipse1.328d102338cb0e8715707f203aa651e2.svg",
-    "main.d506b4a5.css.map": "/ghazlaan/static/css/main.d506b4a5.css.map",
-    "main.01fb74c7.js.map": "/ghazlaan/static/js/main.01fb74c7.js.map",
+    "main.bfb4916f.css.map": "/ghazlaan/static/css/main.bfb4916f.css.map",
+    "main.ac269fd6.js.map": "/ghazlaan/static/js/main.ac269fd6.js.map",
     "215.128dd2e4.chunk.css.map": "/ghazlaan/static/css/215.128dd2e4.chunk.css.map",
-    "215.6b126d8f.chunk.js.map": "/ghazlaan/static/js/215.6b126d8f.chunk.js.map",
+    "215.3c330441.chunk.js.map": "/ghazlaan/static/js/215.3c330441.chunk.js.map",
     "453.f5977e88.chunk.js.map": "/ghazlaan/static/js/453.f5977e88.chunk.js.map",
     "329.aa7e6251.chunk.js.map": "/ghazlaan/static/js/329.aa7e6251.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d506b4a5.css",
-    "static/js/main.01fb74c7.js"
+    "static/css/main.bfb4916f.css",
+    "static/js/main.ac269fd6.js"
   ]
 }
