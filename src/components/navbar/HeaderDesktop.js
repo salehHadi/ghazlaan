@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import arrowDown from "../../assets/arrowDown.svg";
-import { Box } from "@mui/material";
+import { Box, styled } from "@mui/material";
+
+const BTN = styled("button")(() => ({
+  border: "none",
+  backgroundColor: "lightgray",
+  width: "100%",
+  fontSize: "12px",
+  textAlign: "start",
+  padding: "12px",
+  cursor: "pointer",
+  ":hover": {
+    backgroundColor: "gray",
+  },
+}));
 
 export default function Header() {
+  const [isVisibale, setIsVisibale] = useState(false);
   return (
     <header
       style={{
@@ -19,7 +33,7 @@ export default function Header() {
           width: "25%",
         }}
       >
-        <p
+        <button
           style={{
             padding: "12px",
             borderRadius: "32px",
@@ -27,13 +41,15 @@ export default function Header() {
             width: "fit-content",
             color: "white",
             fontWeight: 400,
-            fontSize: "20px",
+            fontSize: "18px",
+            border: "none",
             borderBottom: "4px solid #005596",
             borderRight: "3px solid #005596",
+            cursor: "pointer",
           }}
         >
           تواصل معنا
-        </p>
+        </button>
       </Box>
 
       <Box
@@ -46,14 +62,47 @@ export default function Header() {
           fontWeight: 500,
         }}
       >
-        <p>الرئيسية</p>
-        <p>
-          العمالة المنزلية
-          <span>
-            <img src={arrowDown} alt="arrowDown" />
-          </span>
-        </p>
-        <p>خدماتنا</p>
+        <p style={{ cursor: "pointer" }}>الرئيسية</p>
+        <div
+          style={{ position: "relative", cursor: "pointer" }}
+          onMouseEnter={() => setIsVisibale(true)}
+          onMouseLeave={() => setIsVisibale(false)}
+        >
+          <p>
+            العمالة المنزلية
+            <span>
+              <img
+                src={arrowDown}
+                alt="arrowDown"
+                style={{ marginRight: "6px" }}
+              />
+            </span>
+          </p>
+          {isVisibale && (
+            <div
+              onMouseEnter={() => setIsVisibale(true)}
+              // onMouseLeave={() => setIsVisibale(false)}
+              style={{
+                position: "absolute",
+                bottom: -320,
+                right: 0,
+                display: "inline-block",
+                zIndex: 1,
+                borderRadius: "8px",
+              }}
+            >
+              <BTN>الفلبين</BTN>
+              <BTN>بـنـجـلاديـش</BTN>
+              <BTN>الهند</BTN>
+              <BTN>اوغندا</BTN>
+              <BTN>اثيوبيا</BTN>
+              <BTN>سيريلانكا</BTN>
+              <BTN>باكيستان</BTN>
+              <BTN>كينيا</BTN>
+            </div>
+          )}
+        </div>
+        <p style={{ cursor: "pointer" }}>خدماتنا</p>
       </Box>
 
       <Box

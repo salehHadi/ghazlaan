@@ -18,6 +18,8 @@ code {
   font-family: "Readex Pro", sans-serif;
 }
 
-p {
+p,
+h4,
+h5 {
   margin: 0;
 }

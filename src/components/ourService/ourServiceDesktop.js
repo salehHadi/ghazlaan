@@ -14,6 +14,7 @@ const ServiceContainer = styled(Box)(({ theme }) => ({
   flexDirection: "row",
   gap: "4px",
   height: "100%",
+  padding: "0 24px",
 }));
 
 const ItemContainer = styled(Box)(({ theme }) => ({
@@ -26,13 +27,18 @@ const ItemContainer = styled(Box)(({ theme }) => ({
   height: "100%",
 }));
 
+const Image = styled("img")(() => ({
+  width: "100px",
+  height: "100px",
+}));
+
 const Title = styled(Typography)(({ theme }) => ({
-  fontSize: "20px",
+  fontSize: "16px",
   fontWeight: "500",
   textAlign: "center",
 }));
 const Description = styled(Typography)(({ theme }) => ({
-  fontSize: "16px",
+  fontSize: "14px",
   fontWeight: "400",
   textAlign: "center",
 }));
@@ -44,6 +50,7 @@ export default function OurServiceDesktop() {
         boxShadow: "0px 10px 10px -5px rgba(0, 0, 0, 0.3)",
         position: "relative",
         padding: "0 0 16px 0 ",
+        marginBottom: "40px",
       }}
     >
       <SectionName variant="h2" mb={4} mt={10}>
@@ -61,7 +68,7 @@ export default function OurServiceDesktop() {
       />
       <ServiceContainer>
         <ItemContainer>
-          <img src={icon1} alt="icon1" />
+          <Image src={icon1} alt="icon1" />
           <Title>الـضـمـان</Title>
           <Description variant="h3">
             ضمان استمرارية العمالة طوال فترة العقد بالعمل وفق الشروط المتفق
@@ -69,7 +76,7 @@ export default function OurServiceDesktop() {
           </Description>
         </ItemContainer>
         <ItemContainer>
-          <img src={icon2} alt="icon1" />
+          <Image src={icon2} alt="icon1" />
           <Title>تجديد العقود</Title>
           <Description variant="h3">
             تجديد العقود من السفارات الاجنبية، بما يتوافق مع قوانين و متطلبات كل
@@ -77,7 +84,7 @@ export default function OurServiceDesktop() {
           </Description>
         </ItemContainer>
         <ItemContainer>
-          <img src={icon3} alt="icon1" />
+          <Image src={icon3} alt="icon1" />
           <Title>الـتوصـيـل الـمـنـزلـي </Title>
           <Description variant="h3">
             استقبالها الخادمة من المطار وتوصيلها بأمان إلى المنزل، مع ضمان راحة
@@ -85,7 +92,7 @@ export default function OurServiceDesktop() {
           </Description>
         </ItemContainer>
         <ItemContainer>
-          <img src={icon4} alt="icon1" />
+          <Image src={icon4} alt="icon1" />
           <Title>خدمات الترجمه</Title>
           <Description variant="h3">
             خدمة الترجمة المجانية للأوراق ترجمة دقيقة وسريعة لمختلف المستندات

@@ -4,6 +4,8 @@ import HeroSection from "../components/heroSection/index";
 import NewsLine from "../components/newsLine/Index";
 import OurService from "../components/ourService/Index";
 import Countrys from "../components/countrys/Index";
+import ContactUs from "../components/contactUs/Index";
+import Footer from "../components/footer/Footer";
 
 export default function HomePage() {
   return (
@@ -19,9 +21,11 @@ export default function HomePage() {
     >
       <Header />
       <HeroSection />
-      <NewsLine />
+      {/* <NewsLine /> */}
       <OurService />
       <Countrys />
+      <ContactUs />
+      <Footer />
     </div>
   );
 }
